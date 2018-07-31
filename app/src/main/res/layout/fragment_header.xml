@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bottom_shadow">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:padding="16dp"
+        android:src="@drawable/nyoba"
+        android:id="@+id/profilePic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profilePic"
+        android:layout_toLeftOf="@+id/iconRight"
+        android:layout_toEndOf="@+id/profilePic"
+        android:layout_toStartOf="@+id/iconRight">
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Your Name"
+            android:textSize="16sp"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:id="@+id/mUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Username"
+            android:textSize="16sp"
+            android:paddingBottom="2dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/iconRight"
+        android:padding="16dp"
+        android:src="@drawable/nyoba"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="level" />
+
+</RelativeLayout>

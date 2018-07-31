@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/mProgress"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:rcBackgroundColor="#E9EAEC"
+        app:rcProgress="40"
+        app:rcProgressColor="#99CC00"
+        app:rcRadius="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ketik Terjemahan Yang Tepat"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorCommandQuestion" />
+
+        <TextView
+            android:id="@+id/TVsentences"
+            android:layout_below="@+id/command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/ETanswer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVsentences"
+            android:layout_above="@+id/Bcheck"
+            android:background="@drawable/shape_edittext"
+            android:hint="Terjemahkan kalimat diatas"
+            android:layout_marginBottom="16dp"
+            android:lines="5"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:gravity="top"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/Bcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonDead"
+            android:text="@string/checkAnswer"
+            android:textColor="@color/colorButtonTextDead"
+            android:enabled="false"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

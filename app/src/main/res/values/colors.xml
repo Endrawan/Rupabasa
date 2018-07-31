@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorRed">#ef5350</color>
+    <color name="colorPink">#ec407a</color>
+    <color name="colorPurple">#ab47bc</color>
+    <color name="colorDeepPurple">#7e57c2</color>
+    <color name="colorIndigo">#5c6bc0</color>
+    <color name="colorBlue">#42a5f5</color>
+    <color name="colorLightBlue">#29b6f6</color>
+    <color name="colorCyan">#26c6da</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+
+    //Color Swatches provided by http://designmodo.github.io/Flat-UI/
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+
+    <color name="colorPlaceholder">#D6DADB</color>
+    <color name="colorCommandQuestion">#000000</color>
+    <color name="colorButtonCheck">#99CC00</color>
+    <color name="colorButtonTextActive">#FFFFFF</color>
+    <color name="colorButtonDead">#9e9e9e</color>
+    <color name="colorButtonTextDead">#424242</color>
+    <color name="colorBackground">#eeeeee</color>
+</resources>

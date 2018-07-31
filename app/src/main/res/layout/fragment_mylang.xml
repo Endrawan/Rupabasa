@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/mProgress"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:rcBackgroundColor="#E9EAEC"
+        app:rcProgress="40"
+        app:rcProgressColor="#99CC00"
+        app:rcRadius="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/perintah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terjemahkan kata dibawah"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorCommandQuestion" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/perintah"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/BhearSentences"
+                android:layout_width="56dip"
+                android:layout_height="56dip"
+                android:src="@drawable/ic_volume_up_black_24dp"
+                android:tint="#fff"
+                app:cb_color="#6DBCDB"
+                app:cb_pressedRingWidth="8dip" />
+
+            <TextView
+                android:id="@+id/TVsentences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_below="@+id/linearLayout"
+            android:layout_above="@+id/Bcheck"
+            android:id="@+id/ETanswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:gravity="top"
+            android:hint="Ketik apa yang anda dengarkan"
+            android:lines="5"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/Bcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonDead"
+            android:text="@string/checkAnswer"
+            android:textColor="@color/colorButtonTextDead"
+            android:enabled="false"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

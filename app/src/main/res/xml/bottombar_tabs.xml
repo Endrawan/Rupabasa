@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_practice"
+        icon="@mipmap/ic_latihan"
+        title="Materi"
+        barColorWhenSelected="@color/colorWhite"/>
+    <tab
+        id="@+id/tab_social"
+        icon="@mipmap/ic_sosial"
+        title="Teman"
+        barColorWhenSelected="@color/colorWhite"/>
+    <tab
+        id="@+id/tab_shop"
+        icon="@mipmap/ic_penghargaan"
+        title="Toko"
+        barColorWhenSelected="@color/colorWhite"/>
+    <tab
+        id="@+id/tab_profile"
+        icon="@mipmap/ic_profile"
+        title="Profil"
+        barColorWhenSelected="@color/colorWhite"/>
+</tabs>

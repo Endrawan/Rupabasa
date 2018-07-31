@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.endrawan.dlingua.QuestionActivity">
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/mProgress"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:rcBackgroundColor="#E9EAEC"
+        app:rcProgress="40"
+        app:rcProgressColor="#99CC00"
+        app:rcRadius="0dp" />
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Ucapkan kalimat dibawah"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_below="@+id/command"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/BhearSentences"
+                android:layout_width="56dip"
+                android:layout_height="56dip"
+                android:src="@drawable/ic_volume_up_black_24dp"
+                android:tint="#fff"
+                app:cb_color="#6DBCDB"
+                app:cb_pressedRingWidth="8dip" />
+
+
+            <TextView
+                android:id="@+id/TVsentences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#2D3E50" />
+
+        </LinearLayout>
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/Bspeak"
+            android:layout_width="225dip"
+            android:layout_height="225dip"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/ic_mic_black_96dp"
+            android:tint="#fff"
+            app:cb_color="#6DBCDB"
+            app:cb_pressedRingWidth="8dip" />
+
+        <TextView
+            android:layout_below="@+id/Bspeak"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ketuk di Mik untuk berbicara"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#6DBCDB" />
+
+        <TextView
+            android:id="@+id/cannotMic"
+            android:layout_below="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Saya tidak bisa menggunakan mik untuk saat ini"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/Bcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonDead"
+            android:text="@string/checkAnswer"
+            android:textColor="@color/colorButtonTextDead"
+            android:enabled="false"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

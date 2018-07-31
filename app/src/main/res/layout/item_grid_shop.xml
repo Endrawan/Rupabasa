@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/mItemImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/mItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:text="No ads" />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/mBuy"
+        fbutton:buttonColor="@color/fbutton_color_turquoise"
+        fbutton:cornerRadius="5dp"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        android:text="Beli"/>
+
+</LinearLayout>
